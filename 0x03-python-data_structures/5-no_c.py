@@ -1,5 +1,4 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    dict = {ord(char): None for char in "cC"}
-    new_string = my_string.translate(dict)
+    new_string = "".join(char for char in my_string if char.lower() != "c")
     return new_string
