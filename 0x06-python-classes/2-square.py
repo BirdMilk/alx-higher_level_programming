@@ -7,7 +7,6 @@ This module contains a class that defines a square.
 Usage Example:
 
     Square = __import__('2-square').Square
-
     my_square = Square(3)
     print(type(my_square))
     print(my_square.__dict__)
@@ -29,7 +28,6 @@ class Square:
         Arg:
             size: A integer representing object size.
                   Has a default value of 0.
-        
         Raises:
             TypeError: if size is not an integer.
             ValueError: If size < 0.
